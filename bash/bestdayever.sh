@@ -22,4 +22,3 @@ echo "You have the best $compliment I have ever seen $name!"
 sleep 2
 
 echo "You are $user, and you're in $whereami. By the way, today is $date."
-
