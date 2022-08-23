@@ -17,6 +17,4 @@ if name.lower() == "neo" or name.lower() == "micha":
 			print("You're not evil, get out!")
 else:
 	print("You don't seemed like a dev or devil.")
-	
-	
-	
+
