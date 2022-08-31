@@ -3,7 +3,6 @@
 # Importing the required modules
 import sys
 import os
-import time
 
 # Asking the user for the first number
 num1 = input("Enter the first number: ")
