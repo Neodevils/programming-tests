@@ -6,6 +6,6 @@ area = math.pi * (radius * radius)
 
 print(f"""
 • Diameter: {diameter} ⌀
-• Area of ​​the Circle: {int(area)} cm
+• Area of the Circle: {int(area)} cm
 • Radius: {radius} R
 """)
