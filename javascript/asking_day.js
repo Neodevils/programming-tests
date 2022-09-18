@@ -1,31 +1,39 @@
-var input = 7;
+// Asking author for enter the day
+var input = prompt("Please enter a day(as number):");
 
-var day = input % 7 == 0 ? "Weekend" : "Weekday";
+// Checking if the day is valid
+var expression = input % 7 == 0 ? 7 : input % 7;
 
-console.log(day);
+// Declaring the day
+var day;
 
-switch (input) {
-	default:
-		console.log("Unrecognized day!");
+// Checking the day
+switch (expression) {
 	case 1:
-		console.log("Monday");
+		day = "Monday";
 		break;
 	case 2:
-		console.log("Tuesday");
+		day = "Tuesday";
 		break;
 	case 3:
-		console.log("Wednesday");
+		day = "Wednesday";
 		break;
 	case 4:
-		console.log("Thursday");
+		day = "Thursday";
 		break;
 	case 5:
-		console.log("Friday");
+		day = "Friday";
 		break;
 	case 6:
-		console.log("Saturday");
+		day = "Saturday";
 		break;
 	case 7:
-		console.log("Sunday");
+		day = "Sunday";
+		break;
+	default:
+		day = "Invalid input";
 		break;
 }
+
+// Printing the day
+console.log(day);
