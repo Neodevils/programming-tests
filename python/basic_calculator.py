@@ -1,92 +1,66 @@
-# basito-py - A simple Python3 script to create a basic calculator
+login = """
+(1) addition
+(2) subtraction
+(3) multiplication 
+(4) division 
+(5) square
+(6) root 
+"""
 
-# Importing the required modules
-import sys
-import os
+print(login)
 
-# Asking the user for the first number
-num1 = input("Enter the first number: ")
+question = input("Enter the number of the calculation you want to take: ")
 
-# Asking the user for the second number
-num2 = input("Enter the second number: ")
+if question == "1":
+	num1 = int(input("Enter the first number for addition: "))
+	num2 = int(input("Enter the second number for the addition: "))
 
-# Asking the user for the operation
-operation = input("Enter the operation: ")
+	print(num1, "+", num2, "=", num1 + num2)
 
-# Checking if the user entered a valid operation
-if operation == "+" or operation == "-" or operation == "*" or operation == "/" or operation == "%" or operation == "**":
 
-	# Checking if the user entered a valid operation
-	if operation == "+":
+elif question == "2":
+	num1 = int(input("Enter the first number for substraction: "))
+	num2 = int(input("Enter the second number for the substraction: "))
 
-		# Adding the two numbers
-		result = float(num1) + float(num2)
+	print(num1, "-", num2, "=", num1 - num2)
 
-		# Printing the result
-		print("The result is: " + str(result))
 
-	elif operation == "-":
+elif question == "3":
+	num1 = int(input("Enter the first number for multiplication: "))
+	num2 = int(input("Enter the second number for the multiplication: "))
 
-		# Subtracting the two numbers
-		result = float(num1) - float(num2)
+	print(num1, "*", num2, "=", num1 * num2)
 
-		# Printing the result
-		print("The result is: " + str(result))
 
-	elif operation == "*":
+elif question == "4":
+	num1 = int(input("Enter the first number for division: "))
+	num2 = int(input("Enter the second number for the division: "))
 
-		# Multiplying the two numbers
-		result = float(num1) * float(num2)
+	print(num1, "/", num2, "=", num1 // num2)
 
-		# Printing the result
-		print("The result is: " + str(result))
 
-	elif operation == "/":
+elif question == "5":
+	num1 = int(input("Enter the number whose square you want to calculate: "))
 
-		# Dividing the two numbers
-		result = float(num1) / float(num2)
+	print(num1, "is square =", num1 ** 2)
 
-		# Printing the result
-		print("The result is: " + str(result))
 
-	elif operation == "%":
+elif question == "6":
+	num1 = int(input("Enter the number whose root you want to calculate: "))
 
-		# Getting the remainder of the two numbers
-		result = float(num1) % float(num2)
+	print(num1, "is root =", num1 ** 0.5)
 
-		# Printing the result
-		print("The result is: " + str(result))
 
-	elif operation == "**":
-
-		# Getting the power of the two numbers
-		result = float(num1) ** float(num2)
-
-		# Printing the result
-		print("The result is: " + str(result))
-
-# If the user entered an invalid operation
 else:
+	print("Wrong number!")
+	print("Please enter the given operation for calculating next time!", login)
 
-	# Printing an error message
-	print("Invalid operation!")
 
-	# Exiting the script
-	sys.exit()
-
-# Asking the user if they want to use the calculator again
 again = input("Do you want to use the calculator again? (y/n): ")
 
-# Checking if the user wants to use the calculator again
 if again == "y":
-
-	# Restarting the script
 	os.system("python3 basic_calculator.py")
 
-# If the user doesn't want to use the calculator again
+
 else:
-
-	# Exiting the script
 	sys.exit()
-
-# End of script
