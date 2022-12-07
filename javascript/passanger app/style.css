@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(75deg, #fd9737 0%, #ff2828 90%) no-repeat center fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+}
+
+button {
+    background: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    color: rgb(2, 1, 1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+#countEl {
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0;
+}
