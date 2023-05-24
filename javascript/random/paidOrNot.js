@@ -26,4 +26,4 @@ function checkPayment(people) {
     }
 }
 
-checkPayment(people); // John has not paid
+checkPayment(people); // Mary has not paid
